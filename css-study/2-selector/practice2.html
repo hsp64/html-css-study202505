@@ -44,9 +44,11 @@
         }
         #list li:nth-child(1),li:nth-child(2) {
             /* -n + 2
-                n = 0
-                n = 1
-                n = 2   */
+                n = -0 + 2  -> 2    (O)
+                n = -1 + 2  -> 1    (O)
+                n = -2 + 2  -> 0    (0)
+                N = -3 + 2  -> -1   (X) 음수가 될때는 실행되지 않는다.
+                */
             border: 2px dotted aqua;
         }
         #list li:nth-child(n+3) {
