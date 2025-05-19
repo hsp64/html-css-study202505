@@ -6,30 +6,40 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
-  <style>
-    #grape {
-      color: blueviolet;
-    }
-    .or {
-      color: orange;
-    }
-    span {
-      color: ;
-    }
-  </style>
+    <style>
+        #grape {
+            color: blueviolet;
+        }
+
+        .or {
+            color: orange;
+        }
+
+        span {
+            color: ;
+        }
+
+        .big {
+            font-size: 1.5em;
+        }
+
+        .highlight {
+            text-shadow: 2px 2px 5px tomato;
+        }
+    </style>
 </head>
 <body>
-  <div>
-    <ul>
-      <li>사과</li>
-      <li id="grape">포도</li>
-      <li class="or">오렌지</li>
-    </ul>
-    <ul>
-      <div>당근</div>
-      <p>토마토</p>
-      <span class="or">오랑지</span>
-    </ul>
-  </div>
+    <div>
+        <ul>
+            <li class="highlight">사과</li>
+            <li id="grape" class="big highlight">포도</li>
+            <li class="or">오렌지</li>
+        </ul>
+        <ul>
+            <div class="highlight">당근</div>
+            <p>토마토</p>
+            <span class="or big">오랑지</span>
+        </ul>
+    </div>
 </body>
 </html>
