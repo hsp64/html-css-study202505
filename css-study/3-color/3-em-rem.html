@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <style>
+
+        div {
+            border: 2px solid blue;
+        }
+
+        .root {
+            width: 20em;
+            font-size: 20px;
+        }
+
+        /* em: 자기 자신의 폰트사이즈 대비 html의 디폴트 폰트사이즈는 16px이다. 그래서 20em은 320px인데, 따로 폰트사이즈를 지정해주면 em의 픽셀단위로 변환된다. */
+        /* 자식은 부모가 지정한 폰트사이즈를 따라간다.*/
+        * {
+            box-sizing: border-box
+        }
+
+        p {
+            width: 10em;
+            border: 2px solid salmon;
+            font-size: 30px;
+            padding: 1em;
+
+            /*   width: 10em;
+            font-size: 10px;
+
+            width: 5em;
+            font-size: 20px;
+
+            위 두경우는 비율상으로는 같다
+
+
+            */
+
+        }
+
+        .parent {
+            /* rem: 자기자신의 폰트사이즈가 아닌 html 태그의 폰트크기를 사용
+            rem단위로 작업후 기기에 따라 전체적인 폰트사이즈의 조절이 필요할 떄 수정이 용이
+            html 태그에서 수정이가능함
+            */
+            font-size: 50px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="root">ROOT
+        <div class="parent">PARENT
+            <div class="child">CHILD-1</div>
+            <div class="child">CHILD-2</div>
+        </div>
+    </div>
+
+    <p>링디기딩깅디잉링딩딜이딜읻리이디일이디이디읻리읻이동리딩로도올도올이링리일이동ㄹ동동동로이링ㄹ일이일일이링디기딩깅디잉링딩딜이딜읻리이디일이디이디읻리읻이
+        동리딩로도올도올이링리일이동ㄹ동동동로이링ㄹ일이일일이링디기딩깅디잉링딩딜이딜읻리이디일이디이디읻리읻이동리딩로도올도올이링리일이동ㄹ동동동로이링ㄹ일이일일이링디기딩깅디잉링
+        딩딜이딜읻리이디일이디이디읻리읻이동리딩로도올도올이링리일이동ㄹ동동동로이링ㄹ일이일일이링디기딩깅디잉링딩딜이딜읻리이디일이디이디읻리읻이동리딩로도올도올이링리일이동ㄹ동동동로이링ㄹ일이일일이
+    </p>
+
+</body>
+</html>
