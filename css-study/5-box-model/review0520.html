@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .notice-card {
+            text-align: justify;
+            width: 300px;
+            background: greenyellow;
+            border: 2px dashed gray;
+            margin: 20px auto;
+            padding: 20px;
+            opacity: 0.9;
+            display: block;
+        }
+        .container {
+            display: flex;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            border-left: 2px solid orange;
+            border-top: 2px dashed violet;
+            border-right: 2px red double;
+            border-bottom: 2px skyblue groove;
+            margin: 10px;
+            padding: 10px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notice-card">
+        <h3> 공지사항</h3>
+        <p>누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와
+            일시·장소가 지체없이 통지되어야 한다.
+
+            공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다. 군인은 현역을 면한 후가 아니면 국무총리로 임명될 수 없다.
+
+            국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의
+            조화를 통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.
+        </p>
+    </div>
+
+    <!--    .container>.box{상품$}*3-->
+    <div class="container">
+        <div class="box">상품1</div>
+        <div class="box">상품2</div>
+        <div class="box">상품3</div>
+    </div>
+
+</body>
+</html>
