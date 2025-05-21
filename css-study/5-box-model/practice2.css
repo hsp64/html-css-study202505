@@ -1,0 +1,71 @@
+@import url(common.css);
+
+section {
+    width: 650px;
+    background: gray;
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+a {
+    display: block;
+    color: #fff;
+    margin: 10px 20px;
+    padding: 10px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+a.text2:hover {
+    background: aqua;
+    color: yellow;
+
+}
+
+
+p {
+    color: yellow;
+    margin: 15px;
+    padding : 10px;
+}
+p:hover {
+
+
+}
+p.text2:hover {
+    background: aqua;
+
+}
+.board a {
+    color: inherit;
+    text-decoration: none;
+}
+.board {
+    background: gray;
+    width: 70%;
+    margin: 20px auto;
+    font-size: 3em;
+    color: #fff;
+    padding: 15px;
+}
+.board li {
+    /*border: 4px solid yellow;*/
+    margin-bottom: 15px;
+}
+.board li:last-child {
+    margin-bottom: 0;
+}
+.board li a {
+    display: block;
+    /*background: red;*/
+    font-weight: 700;
+    padding: 15px;
+}
+.board li a:hover {
+    color: yellow;
+    background: skyblue;
+}
+}
