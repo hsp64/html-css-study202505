@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            height: 3000px;
+        }
+        header {
+            border-bottom: 2px solid gray;
+            border-top: 2px solid gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* absolute를 걸면 가로길이 기본값 100%가 해제됨 */
+            width: 100%;
+            /* fixed 무조건 화면 전체기준으로 움직인다. 부모상관x */
+            position: fixed;
+            top: 400px;
+            background: #fff;
+            z-index: 9999;
+        }
+        header .logo {
+            font-size: 40px;
+            padding: 0;
+            margin: 20px 20px 30px;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+            display: flex;
+            margin-right: 20px;
+        }
+        header nav ul li {
+            margin-right: 30px;
+        }
+        main {
+            padding-top: 120px;
+        }
+        .ad-banner {
+            width: 250px;
+            height: 800px;
+            position: absolute;
+            top: 550px;
+            right: 10px;
+        }
+       .ad-banner img {
+           width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+
+<!--    header>h1.logo+(nav>ul>li*4) -->
+    <header>
+        <h1 class="logo">로고</h1>
+        <nav>
+            <ul>
+                <li>소개</li>
+                <li>커뮤니티</li>
+                <li>자료실</li>
+                <li>회원가입</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>어쩌고 저쩌고 나불나불</p>
+    </main>
+    <aside class="ad-banner">
+        <img src="http://oh-design.co.kr/data/item/1664356955/thumb-6647Jqp7IS466Gc84_400x400.png" alt="세로광고">
+    </aside>
+</body>
+</html>
