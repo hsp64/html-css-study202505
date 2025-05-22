@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .grid-container {
+            border: 2px solid tomato;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            grid-template-areas:
+        "header x"
+        "content sidebar";
+        }
+
+        .grid-header {
+            border: 1px solid yellow;
+            grid-area: header;
+        }
+
+        .grid-content {
+            border: 1px solid blue;
+            grid-area: content;
+        }
+
+        .grid-sidebar {
+            border: 1px solid green;
+            grid-area: sidebar;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-header">헤더</div>
+        <div class="grid-content">콘텐츠</div>
+        <div class="grid-sidebar">사이드바</div>
+    </div>
+
+</body>
+</html>
