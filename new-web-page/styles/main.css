@@ -1,0 +1,48 @@
+@import url("../../css-study/5-box-model/common.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+    font-size: 15px;
+    font-family: "Noto Sans KR";
+    height: 3000px;
+}
+section.container-main {
+    padding: 0 15%;
+    font-size: 1.3em;
+    background: #808080FF;
+    width: 100%;
+    position: fixed;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+section.container-main header {
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+.container-main header h1.logo {
+    display: flex;
+    flex: 1.5;
+}
+.container-main header ul.title-list {
+    display: flex;
+    flex: 5;
+
+}
+.container-main header ul.title-list li{
+    padding-right: 20px;
+}
+.container-main header div.sub-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+}
+.container-main header div.sub-title h2{
+    padding-left: 20px;
+}
+
+
