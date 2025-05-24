@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
     font-size: 15px;
     font-family: "Noto Sans KR";
     height: 3000px;
@@ -9,7 +11,9 @@ body {
 section.container-main {
     padding: 0 15%;
     font-size: 1.3em;
-    background: #808080FF;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 20px 20px;
+    backdrop-filter: blur(30px);
     width: 100%;
     position: fixed;
     letter-spacing: 2px;
@@ -20,7 +24,6 @@ section.container-main header {
     display: flex;
     align-items: center;
     padding: 20px;
-
 }
 .container-main header h1.logo {
     display: flex;
@@ -45,4 +48,10 @@ section.container-main header {
     padding-left: 20px;
 }
 
+main h1 {
+    margin: 5% 15%;
+    height: 80vh;
+    background: gray;
+    border-radius: 20px;
+}
 
