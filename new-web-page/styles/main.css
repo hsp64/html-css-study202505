@@ -20,7 +20,7 @@ section.container-main {
     font-weight: 600;
 }
 section.container-main header {
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     display: flex;
     align-items: center;
     padding: 20px;
