@@ -1,0 +1,132 @@
+@import "../../../5-box-model/common.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body {
+    font-size: 16px;
+}
+
+/* header logo searchbar icons */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background: #fdfdfd;
+}
+header nav div.logo img {
+    width: 100px;
+    margin-right: 20%;
+    padding: 10px 0;
+
+}
+header nav div.search-bar {
+    width: 40%;
+}
+header nav div.search-bar input {
+    border: none;
+    width: 100%;
+    font-size: 1em;
+    background: #ededed;
+    height: 30px;
+}
+header nav div.nav-icons a {
+    padding-left: 15px;
+}
+
+/* main-content */
+main {
+    display: flex;
+    justify-content: center;
+    background: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0 30px;
+
+}
+.content-container .left-column {
+    background: #fdfdfd;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.content-container .left-column .post .post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+}
+.content-container .left-column .post .post-header img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.content-container .left-column .post .post-actions {
+    margin: 20px 0 20px 20px;
+}
+.content-container .left-column .post .post-actions img {
+    padding-right: 10px;
+}
+.content-container .left-column .post .post-caption {
+    margin: 0 0 20px 20px;
+}
+.content-container .left-column .post .post-caption strong {
+    font-weight: 700;
+}
+.content-container .right-column .profile-info {
+    display: flex;
+    margin-bottom: 10px;
+}
+.content-container .right-column .profile-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.content-container .right-column .profile-info strong {
+    font-weight: 700;
+}
+.content-container .right-column .suggestions {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px 10px 10px;
+}
+.content-container .right-column .suggestions h4 {
+    margin: 10px 0 20px 0;
+    font-weight: 700;
+}
+.content-container .right-column .suggestions .suggestion {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+.content-container .right-column .suggestions .suggestion img {
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.content-container .right-column .suggestions .suggestion div strong {
+    font-weight: 700;
+}
+.content-container .right-column .suggestions .suggestion div p {
+    margin-right: 10px;
+}
+.content-container .right-column .suggestions .suggestion button {
+    background: #0495f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+/* footer */
+body footer ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto;
+    width: 25%;
+    font-weight: 700;
+    color: #295272;
+}
+
+
